@@ -5,6 +5,8 @@ import StripNavbar from './components/Navbar/StripNavbar';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 import Home from './components/Home/Home';
+import NoticesPage from './components/Home/NoticesPage';
+import AchieversPage from './components/Home/AchieversPage';
 // import About from './pages/About';
 // import Academics from './pages/Academics';
 // import Admissions from './pages/Admissions';
@@ -28,6 +30,8 @@ function App() {
         <main className="main-content">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/notices" element={<NoticesPage />} />
+            <Route path="/achievers" element={<AchieversPage />} />
             {/* <Route path="/about" element={<About />} />
             <Route path="/academics" element={<Academics />} />
             <Route path="/admissions" element={<Admissions />} />

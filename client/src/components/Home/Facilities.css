@@ -1,0 +1,227 @@
+@import '../../constants/color.css';
+@import '../../constants/typography.css';
+
+/* Facilities Section */
+.facilities {
+    padding: 5rem 0;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.facilities .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.facilities-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.facilities-header h2 {
+    color: var(--color-primary);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 1rem;
+}
+
+.facilities-header h2::after {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+.facilities-header p {
+    color: #666;
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 1rem auto 0;
+    line-height: 1.6;
+}
+
+.facilities-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2.5rem;
+    margin-top: 2rem;
+}
+
+.facility-item {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 2.5rem 1.5rem;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    background: #fff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.facility-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.facility-ellipse {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.1;
+    transition: all 0.4s ease;
+}
+
+.facility-item:hover .facility-ellipse {
+    opacity: 0.15;
+}
+
+.ellipse-shape {
+    transition: all 0.5s ease;
+}
+
+.facility-item:hover .ellipse-shape {
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.facility-icon {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 1.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+}
+
+.facility-item:hover .facility-icon {
+    transform: translateY(-5px);
+}
+
+.facility-icon img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+}
+
+.facility-content {
+    position: relative;
+    z-index: 2;
+}
+
+.facility-content h3 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.facility-description {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    min-height: 80px;
+}
+
+.facility-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    margin-top: 0.5rem;
+}
+
+.facility-link:hover {
+    color: var(--color-primary);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.arrow {
+    margin-left: 8px;
+    transition: transform 0.3s ease;
+}
+
+.facility-link:hover .arrow {
+    transform: translateX(4px);
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .facilities-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .facilities {
+        padding: 4rem 0;
+    }
+    
+    .facilities-header h2 {
+        font-size: 2rem;
+    }
+    
+    .facilities-container {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .facility-item {
+        padding: 2rem 1.5rem;
+    }
+}
+
+/* Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.facility-item {
+    animation: fadeInUp 0.6s ease forwards;
+    opacity: 0;
+}
+
+.facility-item:nth-child(1) { animation-delay: 0.1s; }
+.facility-item:nth-child(2) { animation-delay: 0.2s; }
+.facility-item:nth-child(3) { animation-delay: 0.3s; }
+.facility-item:nth-child(4) { animation-delay: 0.4s; }
