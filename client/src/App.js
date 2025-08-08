@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
+import StripNavbar from './components/Navbar/StripNavbar';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
-// import Home from './pages/Home';
+import Home from './components/Home/Home';
 // import About from './pages/About';
 // import Academics from './pages/Academics';
 // import Admissions from './pages/Admissions';
@@ -22,11 +23,12 @@ function App() {
   return (
     <Router>
       <div className="app">
+        <StripNavbar />
         <Navbar />
         <main className="main-content">
           <Routes>
-            {/* <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
+            <Route path="/" element={<Home />} />
+            {/* <Route path="/about" element={<About />} />
             <Route path="/academics" element={<Academics />} />
             <Route path="/admissions" element={<Admissions />} />
             <Route path="/contact" element={<Contact />} /> */}

@@ -1,0 +1,57 @@
+/* Top Contact Strip */
+.top-contact-strip {
+  background-color: var(--primary-700);
+  color: white;
+  padding: 0.3rem 0;
+  font-size: 0.75rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1001;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  white-space: nowrap;
+}
+
+.contact-icon {
+  font-size: 0.7rem;
+  color: var(--primary-100);
+}
+
+.contact-divider {
+  color: rgba(255, 255, 255, 0.3);
+  user-select: none;
+}
+
+/* Responsive styles for contact strip */
+@media (max-width: 1200px) {
+  .contact-info {
+    justify-content: flex-start;
+    padding: 0.3rem 1rem;
+  }
+  
+  .contact-item:nth-child(n+5) {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .top-contact-strip {
+    display: none;
+  }
+}
