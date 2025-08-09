@@ -1,0 +1,475 @@
+@import '../../constants/color.css';
+@import '../../constants/typography.css';
+
+/* Base Styles */
+.academic-resources {
+  font-family: var(--font-body);
+  color: var(--text-primary);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Hero Section */
+.resources-hero {
+  background: linear-gradient(135deg, var(--primary-600), var(--primary-800));
+  color: white;
+  padding: 4rem 0;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.resources-hero h1 {
+  font-size: 2.75rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.resources-hero .subtitle {
+  font-size: 1.25rem;
+  max-width: 700px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+/* Section Headers */
+.section-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+
+.section-header h2 {
+  color: var(--primary-700);
+  font-size: 1.75rem;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.section-header p {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Study Materials Section */
+.study-materials {
+  padding: 4rem 0;
+  background-color: var(--gray-50);
+}
+
+.materials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.material-card {
+  background: white;
+  border-radius: 0.75rem;
+  padding: 1.75rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  color: var(--text-primary);
+  border: 1px solid var(--border-light);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.material-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border-color: var(--primary-200);
+}
+
+.material-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1.25rem;
+  color: var(--primary-600);
+}
+
+.material-card h3 {
+  margin: 0 0 0.75rem 0;
+  color: var(--primary-700);
+  font-size: 1.25rem;
+}
+
+.material-card p {
+  color: var(--text-secondary);
+  margin: 0 0 1.5rem 0;
+  flex-grow: 1;
+}
+
+.view-link {
+  color: var(--primary-600);
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  transition: color 0.2s;
+  margin-top: auto;
+}
+
+.material-card:hover .view-link {
+  color: var(--primary-800);
+}
+
+/* Online Platforms Section */
+.online-platforms {
+  padding: 4rem 0;
+  background: white;
+}
+
+.platforms-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.platform-card {
+  display: flex;
+  background: white;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--border-light);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  color: var(--text-primary);
+}
+
+.platform-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  border-color: var(--primary-200);
+}
+
+.platform-logo {
+  background: var(--primary-50);
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: var(--primary-600);
+  min-width: 100px;
+}
+
+.platform-info {
+  padding: 1.5rem;
+  flex-grow: 1;
+}
+
+.platform-info h3 {
+  margin: 0 0 0.5rem 0;
+  color: var(--primary-700);
+  font-size: 1.1rem;
+}
+
+.platform-info p {
+  color: var(--text-secondary);
+  margin: 0 0 0.75rem 0;
+  font-size: 0.95rem;
+}
+
+.visit-link {
+  color: var(--primary-600);
+  font-size: 0.9rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+/* Learning Tools Section */
+.learning-tools {
+  padding: 4rem 0;
+  background-color: var(--gray-50);
+}
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.tool-card {
+  background: white;
+  border-radius: 0.75rem;
+  padding: 1.75rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  color: var(--text-primary);
+  border: 1px solid var(--border-light);
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+}
+
+.tool-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  border-color: var(--primary-200);
+}
+
+.tool-icon {
+  font-size: 1.75rem;
+  background: var(--primary-100);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--primary-600);
+}
+
+.tool-info h3 {
+  margin: 0 0 0.5rem 0;
+  color: var(--primary-700);
+  font-size: 1.1rem;
+}
+
+.tool-info p {
+  color: var(--text-secondary);
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Quick Links Section */
+.quick-links {
+  padding: 4rem 0;
+  background: white;
+}
+
+.links-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+.quick-link {
+  display: flex;
+  align-items: center;
+  padding: 1.25rem;
+  background: var(--gray-50);
+  border-radius: 0.5rem;
+  text-decoration: none;
+  color: var(--text-primary);
+  transition: all 0.2s ease;
+  border: 1px solid var(--border-light);
+}
+
+.quick-link:hover {
+  background: var(--primary-50);
+  border-color: var(--primary-200);
+  transform: translateY(-2px);
+}
+
+.link-icon {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  color: var(--primary-600);
+}
+
+.link-text {
+  font-weight: 500;
+  color: var(--primary-700);
+}
+
+/* Support Section */
+.support {
+  padding: 4rem 0;
+  background-color: var(--primary-50);
+}
+
+.support-card {
+  background: white;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  display: flex;
+  max-width: 1000px;
+  margin: 0 auto;
+  border: 1px solid var(--border-light);
+}
+
+.support-content {
+  padding: 3rem;
+  flex: 1;
+}
+
+.support-content h2 {
+  color: var(--primary-800);
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+  font-size: 1.75rem;
+}
+
+.support-content p {
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.support-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn.primary {
+  background: var(--primary-600);
+  color: white;
+  border: 2px solid var(--primary-600);
+}
+
+.btn.primary:hover {
+  background: var(--primary-700);
+  border-color: var(--primary-700);
+  transform: translateY(-1px);
+}
+
+.btn.secondary {
+  background: transparent;
+  color: var(--primary-600);
+  border: 2px solid var(--primary-600);
+}
+
+.btn.secondary:hover {
+  background: var(--primary-50);
+  transform: translateY(-1px);
+}
+
+.support-image {
+  width: 300px;
+  background: var(--primary-100);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 6rem;
+  color: var(--primary-600);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .support-card {
+    flex-direction: column;
+  }
+  
+  .support-image {
+    width: 100%;
+    padding: 2rem;
+    order: -1;
+  }
+  
+  .support-content {
+    padding: 2rem;
+  }
+  
+  .materials-grid,
+  .platforms-grid,
+  .tools-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .resources-hero h1 {
+    font-size: 2.25rem;
+  }
+  
+  .resources-hero .subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .section-header h2 {
+    font-size: 1.5rem;
+  }
+  
+  .materials-grid,
+  .platforms-grid,
+  .tools-grid,
+  .links-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .support-actions {
+    flex-direction: column;
+  }
+  
+  .btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .resources-hero {
+    padding: 3rem 1rem;
+  }
+  
+  .resources-hero h1 {
+    font-size: 1.75rem;
+  }
+  
+  .section-header h2 {
+    font-size: 1.4rem;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .material-card,
+  .platform-card,
+  .tool-card {
+    padding: 1.5rem;
+  }
+  
+  .platform-card {
+    flex-direction: column;
+  }
+  
+  .platform-logo {
+    width: 100%;
+    min-height: 100px;
+  }
+  
+  .tool-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .tool-icon {
+    margin-bottom: 1rem;
+  }
+}

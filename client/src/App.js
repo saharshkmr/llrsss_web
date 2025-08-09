@@ -7,8 +7,16 @@ import Footer from './components/Footer/Footer';
 import Home from './components/Home/Home';
 import NoticesPage from './components/Home/NoticesPage';
 import AchieversPage from './components/Home/AchieversPage';
+import AcademicCurriculum from './components/Academic/AcademicCurriculum';
+import SchoolTimings from './components/Academic/SchoolTimings';
+import AcademicCalendar from './components/Academic/AcademicCalendar';
+import SubjectDepartments from './components/Academic/SubjectDepartments';
+import ExaminationSystem from './components/Academic/ExaminationSystem';
+import ResultsAnalysis from './components/Academic/ResultsAnalysis';
+import Scholarships from './components/Academic/Scholarships';
+import AcademicResources from './components/Academic/AcademicResources';
+import ContactUs from './components/ContactUs/ContactUs';
 // import About from './pages/About';
-// import Academics from './pages/Academics';
 // import Admissions from './pages/Admissions';
 // import Contact from './pages/Contact';
 
@@ -32,8 +40,16 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/notices" element={<NoticesPage />} />
             <Route path="/achievers" element={<AchieversPage />} />
+            <Route path="/academics/curriculum" element={<AcademicCurriculum />} />
+            <Route path="/academics/timings" element={<SchoolTimings />} />
+            <Route path="/academics/calendar" element={<AcademicCalendar />} />
+            <Route path="/academics/departments" element={<SubjectDepartments />} />
+            <Route path="/academics/examinations" element={<ExaminationSystem />} />
+            <Route path="/academics/results" element={<ResultsAnalysis />} />
+            <Route path="/academics/scholarships" element={<Scholarships />} />
+            <Route path="/academics/resources" element={<AcademicResources />} />
+            <Route path="/contact" element={<ContactUs />} />
             {/* <Route path="/about" element={<About />} />
-            <Route path="/academics" element={<Academics />} />
             <Route path="/admissions" element={<Admissions />} />
             <Route path="/contact" element={<Contact />} /> */}
           </Routes>
