@@ -2,11 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './AdditionalFacilities.css';
 
-// Using placeholder images - replace with actual images when available
-const classImg = 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80';
-const artImg = 'https://images.unsplash.com/photo-1541961017774-22349e4a5042?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80';
-const colorImg = 'https://images.unsplash.com/photo-1499781350541-7783f6c6a0c8?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80';
-const playImg = 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80';
+// Importing images from the assests directory
+import S1 from '../../assests/HomeSchool/S1.jpg';
+import S2 from '../../assests/HomeSchool/S2.jpg';
+import S3 from '../../assests/HomeSchool/S3.jpg';
 
 const AdditionalFacilities = () => {
     const facilities = [
@@ -14,21 +13,21 @@ const AdditionalFacilities = () => {
             id: 1,
             title: 'Art & Drawing',
             description: 'Art is an umbrella or gamut of any creative activity using one\'s imagination. For e.g Canvas painting is an art form, Sculpting is an art form. Drawing is a type of Art form where an artist sketches his picture on paper as per his imagination.',
-            image: artImg,
+            image: S1,
             link: '/programs/art-drawing'
         },
         {
             id: 2,
             title: 'Color Management',
             description: 'Art is an umbrella or gamut of any creative activity using one\'s imagination. For e.g Canvas painting is an art form, Sculpting is an art form. Drawing is a type of Art form where an artist sketches his picture on paper as per his imagination.',
-            image: colorImg,
+            image: S2,
             link: '/programs/color-management'
         },
         {
             id: 3,
             title: 'Fun & Play',
             description: 'Physical fun such as free play during recess helps develop children\'s motor skills, prevent childhood obesity and build emotional intelligence.',
-            image: playImg,
+            image: S3,
             link: '/programs/fun-play'
         }
     ];

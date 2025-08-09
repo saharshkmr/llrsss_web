@@ -4,9 +4,11 @@ import Marquee from './Marquee';
 import Facilities from './Facilities';
 import AdditionalFacilities from './AdditionalFacilities';
 import Achievements from './Achievements';
+import YouTubeVideos from './YouTubeVideos';
 import './Home.css';
 import './Notice.css';
 import './Facilities.css';
+import './YouTubeVideos.css';
 
 const Home = () => {
   return (
@@ -41,6 +43,9 @@ const Home = () => {
 
       {/* Achievements Section */}
       <Achievements />
+
+      {/* YouTube Videos Section */}
+      <YouTubeVideos />
 
       {/* Notice Board Section */}
       <section className="notice-board">
