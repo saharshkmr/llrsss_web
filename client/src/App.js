@@ -19,6 +19,7 @@ import AcademicResources from './components/Academic/AcademicResources';
 import ContactUs from './components/ContactUs/ContactUs';
 import WhyChooseUs from './components/Admission/WhyChooseUs';
 import AdmissionProcedure from './components/Admission/AdmissionProcedure';
+import FeeStructure from './components/Admission/FeeStructure';
 // import About from './pages/About';
 // import Admissions from './pages/Admissions';
 // import Contact from './pages/Contact';
@@ -55,6 +56,7 @@ function App() {
             <Route path="/contact" element={<ContactUs />} />
             <Route path="/admissions/why-us" element={<WhyChooseUs />} />
             <Route path="/admissions/procedure" element={<AdmissionProcedure />} />
+            <Route path="/admissions/fees" element={<FeeStructure />} />
             {/* <Route path="/about" element={<About />} />
             <Route path="/admissions" element={<Admissions />} />
             <Route path="/contact" element={<Contact />} /> */}

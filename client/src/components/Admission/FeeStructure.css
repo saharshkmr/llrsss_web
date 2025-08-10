@@ -2,18 +2,17 @@
 @import '../../constants/typography.css';
 
 /* Hero Section */
-.admission-procedure-hero {
+.fee-structure-hero {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
         url('../../assests/HomeHero/h1.jpg') center/cover no-repeat;
     color: white;
     padding: 8rem 0 4rem;
     text-align: center;
     position: relative;
-    /* Removed margin-bottom to remove gap */
     margin-bottom: 0;
 }
 
-.admission-procedure-hero h1 {
+.fee-structure-hero h1 {
     font-size: 3.5rem;
     margin-bottom: 1rem;
     font-weight: 700;
@@ -21,7 +20,7 @@
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.admission-procedure-hero p {
+.fee-structure-hero p {
     font-size: 1.25rem;
     max-width: 700px;
     margin: 0 auto;
@@ -30,7 +29,7 @@
 }
 
 /* Main Content */
-.admission-procedure {
+.fee-structure {
     padding: 0 0 4rem;
     /* Top padding set to 0 to avoid extra gap */
 }
@@ -73,86 +72,98 @@
     margin: 0 auto;
 }
 
-/* Procedure Steps */
-.procedure-steps {
+/* Fee Table */
+.fee-table-container {
+    overflow-x: auto;
+    margin: 3rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.fee-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.fee-table th {
+    background-color: var(--primary-600);
+    color: white;
+    font-weight: 600;
+    padding: 1.2rem;
+    text-align: left;
+}
+
+.fee-table td {
+    padding: 1.2rem;
+    border-bottom: 1px solid var(--gray-200);
+    color: var(--gray-700);
+}
+
+.fee-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.fee-table tbody tr:nth-child(even) {
+    background-color: var(--gray-50);
+}
+
+.fee-table tbody tr:hover {
+    background-color: var(--primary-50);
+}
+
+.fee-amount {
+    font-weight: 600;
+    color: var(--primary-700);
+}
+
+/* Payment Options */
+.payment-options {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
-    margin-top: 3rem;
+    margin: 3rem 0;
 }
 
-.step-card {
+.payment-option {
     background: white;
     border-radius: 8px;
     padding: 2rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-top: 4px solid var(--primary-500);
 }
 
-.step-card:hover {
+.payment-option:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-.step-number {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    background-color: var(--primary-500);
-    color: white;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 40px;
-    font-weight: bold;
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-}
-
-.step-card h3 {
-    color: var(--gray-800);
+.payment-option h3 {
+    color: var(--primary-700);
     margin-bottom: 1rem;
     font-size: 1.4rem;
 }
 
-.step-card p {
-    color: var(--gray-600);
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
+.payment-option ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-/* Documents Section */
-.documents-section {
-    background-color: var(--gray-50);
-    padding: 4rem 0;
-    margin: 4rem 0;
-}
-
-.documents-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-    margin-top: 2rem;
-}
-
-.document-item {
-    background: white;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+.payment-option li {
+    margin-bottom: 0.8rem;
+    color: var(--gray-700);
     display: flex;
     align-items: center;
-    gap: 1rem;
-    transition: transform 0.2s ease;
 }
 
-.document-item:hover {
-    transform: translateY(-3px);
-}
-
-.document-icon {
+.payment-option li::before {
+    content: '✓';
     color: var(--primary-500);
-    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 0.8rem;
 }
 
 /* CTA Section */
@@ -162,6 +173,7 @@
     color: white;
     border-radius: 8px;
     margin: 4rem 0;
+    background-color: var(--primary-600);
 }
 
 .cta-section h2 {
@@ -188,30 +200,30 @@
     max-width: 700px;
     margin: 0 auto 2rem;
     font-size: 1.1rem;
-    opacity: 0.9;
+    color: var(--gray-600);
 }
 
 .cta-button {
     display: inline-block;
-    background-color: white;
-    color: var(--primary-700);
+    background-color: var(--primary-600);
+    color: white;
     padding: 0.8rem 2rem;
     border-radius: 50px;
     font-weight: 600;
     text-decoration: none;
     transition: all 0.3s ease;
-    border: 2px solid white;
+    border: 2px solid var(--primary-600);
 }
 
 .cta-button:hover {
-    background-color: white;
-    color: var(--primary-700);
+    background-color: var(--primary-700);
     transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-    .admission-procedure-hero h1 {
+    .fee-structure-hero h1 {
         font-size: 2.5rem;
     }
 
@@ -219,11 +231,12 @@
         font-size: 2rem;
     }
 
-    .procedure-steps {
+    .payment-options {
         grid-template-columns: 1fr;
     }
 
-    .documents-grid {
-        grid-template-columns: 1fr;
+    .fee-table th,
+    .fee-table td {
+        padding: 0.8rem;
     }
 }
