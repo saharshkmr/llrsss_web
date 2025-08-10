@@ -7,6 +7,7 @@
   font-family: var(--font-body);
   color: var(--text-primary);
   line-height: var(--leading-normal);
+  background-color: #f9f9f9;
 }
 
 /* Hero Section */
@@ -63,7 +64,7 @@
   margin-bottom: 1.5rem;
   font-weight: 700;
   opacity: 0.95;
-  text-shadow: 
+  text-shadow:
     1px 1px 3px rgba(0, 0, 0, 0.8),
     0 0 10px rgba(0, 0, 0, 0.5),
     0 0 20px rgba(0, 0, 0, 0.3);
@@ -76,7 +77,7 @@
   margin: 0 auto 2.5rem;
   opacity: 0.95;
   line-height: 1.6;
-  text-shadow: 
+  text-shadow:
     1px 1px 2px rgba(0, 0, 0, 0.8),
     0 0 8px rgba(0, 0, 0, 0.5);
   font-weight: 500;

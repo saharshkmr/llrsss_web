@@ -386,17 +386,17 @@
   .support-card {
     flex-direction: column;
   }
-  
+
   .support-image {
     width: 100%;
     padding: 2rem;
     order: -1;
   }
-  
+
   .support-content {
     padding: 2rem;
   }
-  
+
   .materials-grid,
   .platforms-grid,
   .tools-grid {
@@ -408,26 +408,26 @@
   .resources-hero h1 {
     font-size: 2.25rem;
   }
-  
+
   .resources-hero .subtitle {
     font-size: 1.1rem;
   }
-  
+
   .section-header h2 {
     font-size: 1.5rem;
   }
-  
+
   .materials-grid,
   .platforms-grid,
   .tools-grid,
   .links-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .support-actions {
     flex-direction: column;
   }
-  
+
   .btn {
     width: 100%;
   }
@@ -437,38 +437,38 @@
   .resources-hero {
     padding: 3rem 1rem;
   }
-  
+
   .resources-hero h1 {
     font-size: 1.75rem;
   }
-  
+
   .section-header h2 {
     font-size: 1.4rem;
     flex-direction: column;
     gap: 0.5rem;
   }
-  
+
   .material-card,
   .platform-card,
   .tool-card {
     padding: 1.5rem;
   }
-  
+
   .platform-card {
     flex-direction: column;
   }
-  
+
   .platform-logo {
     width: 100%;
     min-height: 100px;
   }
-  
+
   .tool-card {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
-  
+
   .tool-icon {
     margin-bottom: 1rem;
   }

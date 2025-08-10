@@ -35,7 +35,7 @@ const AdditionalFacilities = () => {
     return (
         <section className="additional-facilities">
             <div className="container">
-                <div className="section-header">
+                <div className="facilities-header">
                     <h2>School Classes</h2>
                     <p>A type of learning situation: a method by which schools function as organization by grouping their pupils according to various pedagogic principles.</p>
                 </div>

@@ -182,15 +182,15 @@
   .departments-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .departments-header h1 {
     font-size: 2rem;
   }
-  
+
   .additional-info {
     padding: 1.5rem;
   }
-  
+
   .highlights {
     grid-template-columns: 1fr;
   }

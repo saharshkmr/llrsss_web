@@ -3,8 +3,8 @@
 
 /* Notice Board Section */
 .notice-board {
-    padding: 4rem 2rem;
-    background-color: #f9f9f9;
+    padding: 4rem 2rem 0;
+    /* background-color: #f9f9f9; */
 }
 
 .notice-board-container {

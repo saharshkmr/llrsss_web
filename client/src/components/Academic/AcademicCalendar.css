@@ -110,10 +110,25 @@
   display: inline-block;
 }
 
-.legend-color.academic { background-color: var(--primary-100); border: 2px solid var(--primary-300); }
-.legend-color.holiday { background-color: var(--error-100); border: 2px solid var(--error-300); }
-.legend-color.exam { background-color: var(--warning-100); border: 2px solid var(--warning-300); }
-.legend-color.event { background-color: var(--success-100); border: 2px solid var(--success-300); }
+.legend-color.academic {
+  background-color: var(--primary-100);
+  border: 2px solid var(--primary-300);
+}
+
+.legend-color.holiday {
+  background-color: var(--error-100);
+  border: 2px solid var(--error-300);
+}
+
+.legend-color.exam {
+  background-color: var(--warning-100);
+  border: 2px solid var(--warning-300);
+}
+
+.legend-color.event {
+  background-color: var(--success-100);
+  border: 2px solid var(--success-300);
+}
 
 /* Calendar Content */
 .calendar-content {
@@ -174,10 +189,21 @@
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
-.event-card.academic { border-left-color: var(--primary-500); }
-.event-card.holiday { border-left-color: var(--error-500); }
-.event-card.exam { border-left-color: var(--warning-500); }
-.event-card.event { border-left-color: var(--success-500); }
+.event-card.academic {
+  border-left-color: var(--primary-500);
+}
+
+.event-card.holiday {
+  border-left-color: var(--error-500);
+}
+
+.event-card.exam {
+  border-left-color: var(--warning-500);
+}
+
+.event-card.event {
+  border-left-color: var(--success-500);
+}
 
 .event-date {
   font-size: 0.875rem;
@@ -221,31 +247,46 @@
   color: var(--gray-700);
 }
 
-.event-card.academic .event-type { background: var(--primary-50); color: var(--primary-700); }
-.event-card.holiday .event-type { background: var(--error-50); color: var(--error-700); }
-.event-card.exam .event-type { background: var(--warning-50); color: var(--warning-700); }
-.event-card.event .event-type { background: var(--success-50); color: var(--success-700); }
+.event-card.academic .event-type {
+  background: var(--primary-50);
+  color: var(--primary-700);
+}
+
+.event-card.holiday .event-type {
+  background: var(--error-50);
+  color: var(--error-700);
+}
+
+.event-card.exam .event-type {
+  background: var(--warning-50);
+  color: var(--warning-700);
+}
+
+.event-card.event .event-type {
+  background: var(--success-50);
+  color: var(--success-700);
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
   .calendar-header h1 {
     font-size: 2rem;
   }
-  
+
   .calendar-header p {
     font-size: 1rem;
   }
-  
+
   .events-grid {
     grid-template-columns: 1fr;
     padding: 1rem;
   }
-  
+
   .legend {
     gap: 1rem;
     padding: 0.75rem;
   }
-  
+
   .legend-item {
     font-size: 0.875rem;
   }
@@ -257,21 +298,21 @@
     padding: 0;
     max-width: 100%;
   }
-  
+
   .calendar-header {
     margin-bottom: 1.5rem;
   }
-  
+
   .legend {
     display: none;
   }
-  
+
   .calendar-month {
     page-break-inside: avoid;
     break-inside: avoid;
     margin-bottom: 1.5rem;
   }
-  
+
   .event-card {
     break-inside: avoid;
   }

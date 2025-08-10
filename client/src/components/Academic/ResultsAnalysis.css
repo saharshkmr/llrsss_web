@@ -388,7 +388,7 @@
   .overall-results {
     grid-template-columns: 1fr;
   }
-  
+
   .stats-grid {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -398,12 +398,12 @@
   .stats-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   .filters {
     flex-direction: column;
     gap: 1rem;
   }
-  
+
   .filter-group {
     width: 100%;
   }
@@ -413,11 +413,11 @@
   .results-header h1 {
     font-size: 2rem;
   }
-  
+
   .stats-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .analysis-grid {
     grid-template-columns: 1fr;
   }

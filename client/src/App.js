@@ -4,6 +4,7 @@ import './App.css';
 import StripNavbar from './components/Navbar/StripNavbar';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
+import ScrollToTop from './components/ScrollToTop';
 import Home from './components/Home/Home';
 import NoticesPage from './components/Home/NoticesPage';
 import AchieversPage from './components/Home/AchieversPage';
@@ -33,6 +34,7 @@ function App() {
   return (
     <Router>
       <div className="app">
+        <ScrollToTop />
         <StripNavbar />
         <Navbar />
         <main className="main-content">

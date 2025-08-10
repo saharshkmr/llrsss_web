@@ -49,7 +49,7 @@ const Achievements = () => {
   return (
     <section className="achievements">
       <div className="container">
-        <div className="section-header">
+        <div className="facilities-header">
           <h2>Our Top Achievers</h2>
           <p>Celebrating excellence in academic performance</p>
         </div>
