@@ -21,6 +21,7 @@ import WhyChooseUs from './components/Admission/WhyChooseUs';
 import AdmissionProcedure from './components/Admission/AdmissionProcedure';
 import FeeStructure from './components/Admission/FeeStructure';
 import EligibilityCriteria from './components/Admission/EligibilityCriteria';
+import ImportantDates from './components/Admission/ImportantDates';
 // import About from './pages/About';
 // import Admissions from './pages/Admissions';
 // import Contact from './pages/Contact';
@@ -59,6 +60,7 @@ function App() {
             <Route path="/admissions/procedure" element={<AdmissionProcedure />} />
             <Route path="/admissions/fees" element={<FeeStructure />} />
             <Route path="/admissions/eligibility" element={<EligibilityCriteria />} />
+            <Route path="/admissions/dates" element={<ImportantDates />} />
             {/* <Route path="/about" element={<About />} />
             <Route path="/admissions" element={<Admissions />} />
             <Route path="/contact" element={<Contact />} /> */}
