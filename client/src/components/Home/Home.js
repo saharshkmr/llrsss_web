@@ -17,17 +17,16 @@ const Home = () => {
       <section className="hero">
         <div className="hero-slider-container">
           <HeroSlider />
-          <div className="hero-content">
-            {/* <h1 className="hero-title">Welcome to</h1> */}
-            <p className="hero-subtitle">Welcome to</p>
-            <p className="hero-subtitle">Lala Lajpat Rai Bal Mandir Senior Secondary School</p>
-            <p className="hero-description">
-              Excellence in Education, Nurturing Future Leaders
-            </p>
-            <div className="hero-buttons">
-              <button className="btn btn-primary">Learn More</button>
-              <button className="btn btn-outline">Contact Us</button>
-            </div>
+        </div>
+        <div className="hero-content">
+          <p className="hero-subtitle">Welcome to</p>
+          <p className="hero-title">Lala Lajpat Rai Bal Mandir Senior Secondary School</p>
+          <p className="hero-description">
+            Excellence in Education, Nurturing Future Leaders
+          </p>
+          <div className="hero-buttons">
+            <button className="btn btn-primary">Learn More</button>
+            <button className="btn btn-outline">Contact Us</button>
           </div>
         </div>
       </section>

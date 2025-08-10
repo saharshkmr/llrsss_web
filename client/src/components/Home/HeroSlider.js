@@ -106,7 +106,18 @@ const slides = [
 
 const HeroSlider = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
-    const [isAutoPlaying, setIsAutoPlaying] = useState(true);
+    const isAutoPlaying = true;
+    
+    // Auto-advance slides
+    useEffect(() => {
+        if (!isAutoPlaying) return;
+        
+        const timer = setInterval(() => {
+            setCurrentSlide(prev => (prev === slides.length - 1 ? 0 : prev + 1));
+        }, 5000);
+        
+        return () => clearInterval(timer);
+    }, [isAutoPlaying, currentSlide]);
 
     const nextSlide = () => {
         setCurrentSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1));

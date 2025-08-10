@@ -3,16 +3,21 @@
 @import '../../constants/typography.css';
 
 .hero-slider {
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
+    z-index: 1; /* Lower than hero-content */
     overflow: hidden;
 }
 
 .slider-container {
     display: flex;
     height: 100%;
+    width: 100%;
     transition: transform 0.5s ease-in-out;
+    will-change: transform;
 }
 
 .slide {
@@ -37,6 +42,7 @@
     background: linear-gradient(to bottom,
             rgba(0, 0, 0, 0.3) 0%,
             rgba(0, 0, 0, 0.6) 100%);
+    pointer-events: none; /* Ensure overlay doesn't block interaction with content */
 }
 
 .slider-nav {

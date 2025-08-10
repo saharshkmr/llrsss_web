@@ -134,7 +134,7 @@ const AcademicResources = () => {
             <h2>📚 Study Materials</h2>
             <p>Download or access digital learning resources for all classes</p>
           </div>
-          
+
           <div className="materials-grid">
             {resources.studyMaterials.map(item => (
               <a key={item.id} href={item.link} className="material-card">
@@ -154,13 +154,13 @@ const AcademicResources = () => {
             <h2>🌐 Recommended Online Platforms</h2>
             <p>Trusted digital learning platforms to enhance your studies</p>
           </div>
-          
+
           <div className="platforms-grid">
             {resources.onlinePlatforms.map(platform => (
-              <a 
-                key={platform.id} 
-                href={platform.link} 
-                target="_blank" 
+              <a
+                key={platform.id}
+                href={platform.link}
+                target="_blank"
                 rel="noopener noreferrer"
                 className="platform-card"
               >
@@ -182,13 +182,13 @@ const AcademicResources = () => {
             <h2>🛠️ Learning Tools & Software</h2>
             <p>Interactive tools to make learning engaging and effective</p>
           </div>
-          
+
           <div className="tools-grid">
             {resources.tools.map(tool => (
-              <a 
-                key={tool.id} 
-                href={tool.link} 
-                target="_blank" 
+              <a
+                key={tool.id}
+                href={tool.link}
+                target="_blank"
                 rel="noopener noreferrer"
                 className="tool-card"
               >
@@ -214,32 +214,32 @@ const AcademicResources = () => {
             <h2>🔗 Quick Links</h2>
             <p>Important educational resources and references</p>
           </div>
-          
+
           <div className="links-grid">
-            <a href="#" className="quick-link">
+            <button type="button" className="quick-link">
               <span className="link-icon">📅</span>
               <span className="link-text">Academic Calendar</span>
-            </a>
-            <a href="#" className="quick-link">
+            </button>
+            <button type="button" className="quick-link">
               <span className="link-icon">📋</span>
               <span className="link-text">Syllabus</span>
-            </a>
-            <a href="#" className="quick-link">
+            </button>
+            <button type="button" className="quick-link">
               <span className="link-icon">📊</span>
               <span className="link-text">Result Portal</span>
-            </a>
-            <a href="#" className="quick-link">
+            </button>
+            <button type="button" className="quick-link">
               <span className="link-icon">📚</span>
               <span className="link-text">Digital Library</span>
-            </a>
-            <a href="#" className="quick-link">
+            </button>
+            <button type="button" className="quick-link">
               <span className="link-icon">🎓</span>
               <span className="link-text">Scholarships</span>
-            </a>
-            <a href="#" className="quick-link">
+            </button>
+            <button type="button" className="quick-link">
               <span className="link-icon">📝</span>
               <span className="link-text">Exam Schedule</span>
-            </a>
+            </button>
           </div>
         </div>
       </section>
