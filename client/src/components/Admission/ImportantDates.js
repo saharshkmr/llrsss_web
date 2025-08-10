@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaCalendarAlt, FaExclamationCircle, FaInfoCircle, FaRegCalendarAlt } from 'react-icons/fa';
+import { FaExclamationCircle, FaInfoCircle, FaRegCalendarAlt } from 'react-icons/fa';
 import './ImportantDates.css';
 
 const ImportantDates = () => {

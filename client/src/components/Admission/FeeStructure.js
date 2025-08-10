@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaRupeeSign, FaInfoCircle, FaRegCreditCard, FaUniversity, FaMoneyBillWave } from 'react-icons/fa';
+import { FaInfoCircle, FaRegCreditCard, FaUniversity, FaMoneyBillWave } from 'react-icons/fa';
 import './FeeStructure.css';
 
 const FeeStructure = () => {

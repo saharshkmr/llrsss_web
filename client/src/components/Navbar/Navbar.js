@@ -69,7 +69,6 @@ const Navbar = () => {
                 { title: 'Eligibility Criteria', path: '/admissions/eligibility' },
                 { title: 'Important Dates', path: '/admissions/dates' },
                 { title: 'Online Application', path: '/admissions/apply' },
-                { title: 'Virtual Tour', path: '/admissions/tour' },
                 { title: 'FAQs', path: '/admissions/faqs' }
             ]
         },
