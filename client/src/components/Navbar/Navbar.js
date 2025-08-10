@@ -63,7 +63,7 @@ const Navbar = () => {
             title: 'Admission',
             path: '#',
             dropdown: [
-                { title: 'Why Choose LLRSSS?', path: '/admissions/why-us' },
+                { title: 'Why Choose Us?', path: '/admissions/why-us' },
                 { title: 'Admission Procedure', path: '/admissions/procedure' },
                 { title: 'Fee Structure', path: '/admissions/fees' },
                 { title: 'Eligibility Criteria', path: '/admissions/eligibility' },

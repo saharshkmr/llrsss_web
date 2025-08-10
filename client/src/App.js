@@ -17,6 +17,7 @@ import ResultsAnalysis from './components/Academic/ResultsAnalysis';
 import Scholarships from './components/Academic/Scholarships';
 import AcademicResources from './components/Academic/AcademicResources';
 import ContactUs from './components/ContactUs/ContactUs';
+import WhyChooseUs from './components/Admission/WhyChooseUs';
 // import About from './pages/About';
 // import Admissions from './pages/Admissions';
 // import Contact from './pages/Contact';
@@ -51,6 +52,7 @@ function App() {
             <Route path="/academics/scholarships" element={<Scholarships />} />
             <Route path="/academics/resources" element={<AcademicResources />} />
             <Route path="/contact" element={<ContactUs />} />
+            <Route path="/admissions/why-us" element={<WhyChooseUs />} />
             {/* <Route path="/about" element={<About />} />
             <Route path="/admissions" element={<Admissions />} />
             <Route path="/contact" element={<Contact />} /> */}
