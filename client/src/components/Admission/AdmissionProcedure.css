@@ -1,0 +1,228 @@
+@import '../../constants/color.css';
+@import '../../constants/typography.css';
+
+/* Hero Section */
+.admission-procedure-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('../../assests/HomeHero/h1.jpg') center/cover no-repeat;
+    color: white;
+    padding: 8rem 0 4rem;
+    text-align: center;
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.admission-procedure-hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.admission-procedure-hero p {
+    font-size: 1.25rem;
+    max-width: 700px;
+    margin: 0 auto;
+    opacity: 0.9;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Main Content */
+.admission-procedure {
+    padding: 2rem 0 4rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-header h2 {
+    color: var(--primary-700);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    position: relative;
+    display: inline-block;
+}
+
+.section-header h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: var(--primary-500);
+    border-radius: 2px;
+}
+
+.section-header p {
+    color: var(--gray-600);
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Procedure Steps */
+.procedure-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.step-card {
+    background: white;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 4px solid var(--primary-500);
+}
+
+.step-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.step-number {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary-500);
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.step-card h3 {
+    color: var(--gray-800);
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+.step-card p {
+    color: var(--gray-600);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+/* Documents Section */
+.documents-section {
+    background-color: var(--gray-50);
+    padding: 4rem 0;
+    margin: 4rem 0;
+}
+
+.documents-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.document-item {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: transform 0.2s ease;
+}
+
+.document-item:hover {
+    transform: translateY(-3px);
+}
+
+.document-icon {
+    color: var(--primary-500);
+    font-size: 1.5rem;
+}
+
+/* CTA Section */
+.cta-section {
+    text-align: center;
+    padding: 4rem 0;
+    /* background: linear-gradient(135deg, var(--primary-600) 0%, var(--primary-700) 100%); */
+    color: white;
+    border-radius: 8px;
+    margin: 4rem 0;
+}
+
+.cta-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    display: inline-block;
+    color: var(--primary-700);
+}
+
+.cta-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: var(--primary-500);
+    border-radius: 2px;
+}
+
+.cta-section p {
+    max-width: 700px;
+    margin: 0 auto 2rem;
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: white;
+    color: var(--primary-700);
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 2px solid white;
+}
+
+.cta-button:hover {
+    background-color: white;
+    color: var(--primary-700);
+    transform: translateY(-2px);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .admission-procedure-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .section-header h2 {
+        font-size: 2rem;
+    }
+
+    .procedure-steps {
+        grid-template-columns: 1fr;
+    }
+
+    .documents-grid {
+        grid-template-columns: 1fr;
+    }
+}

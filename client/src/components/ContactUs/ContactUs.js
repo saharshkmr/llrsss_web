@@ -71,12 +71,10 @@ const ContactUs = () => {
   return (
     <div className="contact-page">
       {/* Hero Section */}
-      <section className="contact-hero">
+      <section className="curriculum-hero">
         <div className="container">
-          <div className="hero-content">
-            <h1>Get in Touch</h1>
-            <p>Have questions or feedback? We'd love to hear from you. Our team is here to help.</p>
-          </div>
+          <h1>Contact Us</h1>
+          <p>Have questions or feedback? We'd love to hear from you. Our team is here to help.</p>
         </div>
       </section>
 

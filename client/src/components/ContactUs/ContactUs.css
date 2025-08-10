@@ -26,8 +26,8 @@
   color: var(--contact-text);
   background-color: var(--contact-bg);
   line-height: 1.6;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), 
-                  url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTTAgMGgxMDB2MTAwSDB6IiBmaWxsPSJub25lIi8+PHBhdGggZD0iTTUwIDUwYzAgMTMuODA3LTExLjE5MyAyNS0yNSAyNXMtMjUtMTEuMTkzLTI1LTI1UzExLjE5MyAwIDI1IDBzMjUgMTEuMTkzIDI1IDI1eiIgZmlsbD0icmdiYSgyNTUsMTkzLDcsMC4wNSkiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjcGF0dGVybikiLz48L3N2Zz4=');
+  background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+    url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTTAgMGgxMDB2MTAwSDB6IiBmaWxsPSJub25lIi8+PHBhdGggZD0iTTUwIDUwYzAgMTMuODA3LTExLjE5MyAyNS0yNSAyNXMtMjUtMTEuMTkzLTI1LTI1UzExLjE5MyAwIDI1IDBzMjUgMTEuMTkzIDI1IDI1eiIgZmlsbD0icmdiYSgyNTUsMTkzLDcsMC4wNSkiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjcGF0dGVybikiLz48L3N2Zz4=');
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -484,15 +484,15 @@
     gap: 2.5rem;
     margin-top: 2rem;
   }
-  
+
   .contact-hero {
     padding: 4rem 0;
   }
-  
+
   .hero-content h1 {
     font-size: 2.5rem;
   }
-  
+
   .hero-content p {
     font-size: 1.125rem;
   }
@@ -503,24 +503,24 @@
     grid-template-columns: 1fr;
     gap: 1.25rem;
   }
-  
+
   .contact-card {
     flex-direction: column;
     align-items: flex-start;
   }
-  
+
   .contact-icon {
     margin-bottom: 1rem;
   }
-  
+
   .hero-content h1 {
     font-size: 2rem;
   }
-  
+
   .section-header h2 {
     font-size: 1.5rem;
   }
-  
+
   .contact-form-section,
   .contact-info-section {
     padding: 1.5rem;
@@ -533,6 +533,7 @@
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -679,7 +680,7 @@ textarea {
   text-align: center;
 }
 
-.contact-info > p {
+.contact-info>p {
   color: #555;
   margin-bottom: 25px;
   text-align: center;
@@ -797,16 +798,16 @@ textarea {
     flex-direction: column;
     gap: 20px;
   }
-  
+
   .contact-form,
   .contact-info {
     min-width: 100%;
   }
-  
+
   .timings-hero h1 {
     font-size: 2rem;
   }
-  
+
   .timings-hero p {
     font-size: 1rem;
   }
@@ -814,14 +815,29 @@ textarea {
 
 /* Animation */
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .contact-card {
   animation: fadeIn 0.6s ease-out forwards;
 }
 
-.contact-card:nth-child(1) { animation-delay: 0.1s; }
-.contact-card:nth-child(2) { animation-delay: 0.2s; }
-.contact-card:nth-child(3) { animation-delay: 0.3s; }
+.contact-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.contact-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.contact-card:nth-child(3) {
+  animation-delay: 0.3s;
+}
