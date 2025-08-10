@@ -121,10 +121,11 @@ const AcademicResources = () => {
 
   return (
     <div className="academic-resources">
-      <section className="resources-hero">
+      {/* Hero Section */}
+      <section className="curriculum-hero">
         <div className="container">
           <h1>Academic Resources</h1>
-          <p className="subtitle">Access a wealth of educational materials and tools to support your learning journey</p>
+          <p>Access a wide range of study materials, digital resources, and learning tools to support your academic journey</p>
         </div>
       </section>
 
