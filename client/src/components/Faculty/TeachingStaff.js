@@ -50,9 +50,7 @@ const TeachingStaff = () => {
     }, [searchTerm, activeFilter]);
 
     const handleCardClick = (staff) => {
-        setSelectedStaff(staff);
-        setShowPopup(true);
-        document.body.style.overflow = 'hidden'; // Prevent scrolling when popup is open
+        navigate(`/faculty/teaching-staff/${staff.id}`);
     };
 
     const closePopup = () => {
